@@ -10,5 +10,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: knitr,
-         kableExtra
+         kableExtra,
+         ggplot2,
+         reshape2
 RoxygenNote: 7.1.2
