@@ -4,7 +4,7 @@
 \alias{myconstr}
 \title{Returns the results from a t-test}
 \usage{
-myconstr(x, y, alpha = 0.05)
+myconstr(x, y, alpha = 0.05, paired = paired)
 }
 \arguments{
 \item{x}{first inserted array}
@@ -12,11 +12,16 @@ myconstr(x, y, alpha = 0.05)
 \item{y}{second inserted array}
 
 \item{alpha}{confidence level}
+
+\item{paired}{determines if t-test is paired}
+}
+\value{
+
 }
 \description{
-Takes in three parameters, two arrays of numbers, and the confidence interval
+Takes in four parameters, two arrays of numbers, the confidence and a boolean
 Uses both arrays to perform a t-test, saving the dataframe from the two arrays, level of confidence, confidence interval, and p-value
 }
 \examples{
-# myconstr(x = array1, y = array2, alpha = 0.05)
+# myconstr(x = array1, y = array2, alpha = 0.05, paired = TRUE)
 }

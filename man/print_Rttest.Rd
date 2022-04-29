@@ -9,8 +9,12 @@ print_Rttest(obj)
 \arguments{
 \item{obj}{object containing results from previous t-test}
 }
+\value{
+
+}
 \description{
 Takes in an object containing a dataframe with two arrays, the confidence level, confidence intervals, and p value
+Prints the calculated confidence interval and other t-test values
 }
 \examples{
 # print_Rttest(obj)

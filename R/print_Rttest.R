@@ -12,9 +12,9 @@
 print_Rttest <- function(obj) {
 
   names(obj) <- c("Dataframe X and Y", "Alpha Value", "CI Lower", "CI Upper",
-                  "P Value")
+                  "P Value", "Paired")
 
-
+  sprintf("A 95% confidence interval for %s - %s", obj$`CI Lower`, obj$`CI Upper`)
   print(list( obj$`Alpha Value`, obj$`CI Lower`, obj$`CI Upper`, obj$`P Value`))
   obj1 <- obj$`Dataframe X and Y`
 
