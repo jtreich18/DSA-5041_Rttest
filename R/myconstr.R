@@ -38,7 +38,7 @@ myconstr = function(x, y, alpha = 0.05, paired = paired) {
     print("A Paired T-Test will be performed:")
   }
   else {
-    if (var_equal = TRUE) {
+    if (var_equal == TRUE) {
       print("A Welch Test will be performed:")
     }
     else {
