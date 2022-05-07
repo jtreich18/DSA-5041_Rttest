@@ -20,19 +20,18 @@ myconstr = function(x, y, alpha = 0.05, paired = paired) {
                         Y = c(y, rep(NA, max_length - length(y))))
 
   # determine if the t.test has equal variances
-  v <- var.test(x,y)
+  v <- stats::var.test(x,y)
   v2 <- v$p.value
   # use t.test w var.equal set to true when p-val < alpha
   if (v2 < alpha) {
-    t <- t.test(x, y, var.equal = TRUE, paired = paired)
+    t <- stats::t.test(x, y, var.equal = TRUE, paired = paired)
     var_equal = TRUE
   }
   # use t.test w var.equal set to false when p-val > alpha
   else {
-    t <- t.test(x, y, var.equal = FALSE, paired = paired)
+    t <- stats::t.test(x, y, var.equal = FALSE, paired = paired)
     var_equal = FALSE
   }
-
   # Print which type of test will be used
   if (paired == TRUE) {
     print("A Paired T-Test will be performed:")
