@@ -4,7 +4,7 @@
 \alias{myconstr}
 \title{Returns the results from a t-test}
 \usage{
-myconstr(x, y, alpha = 0.05, paired = paired)
+myconstr(x, y, alpha = 0.05, paired = Paired)
 }
 \arguments{
 \item{x}{first inserted array}
