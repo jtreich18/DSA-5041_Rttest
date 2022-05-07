@@ -12,6 +12,7 @@ plot_Rttest(obj)
 \value{
 
 }
+
 \description{
 Takes in one object, the same one returned from the constructor function
 Creates a new dataframe of the arrays in the object

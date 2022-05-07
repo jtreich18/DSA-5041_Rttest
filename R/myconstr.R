@@ -42,9 +42,4 @@ myconstr = function(x, y, alpha = 0.05, paired = paired) {
   # Return the object from the function environment
   obj
 
-  # Call the print_Rttest function
-  Rttest.jtr::print_Rttest(obj)
-  # Call the plot_Rttest function
-  Rttest.jtr::plot_Rttest(obj)
-
 }
