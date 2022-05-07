@@ -9,10 +9,6 @@ plot_Rttest(obj)
 \arguments{
 \item{obj}{object containing the arrays which will be plotted}
 }
-\value{
-
-}
-
 \description{
 Takes in one object, the same one returned from the constructor function
 Creates a new dataframe of the arrays in the object

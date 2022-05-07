@@ -15,9 +15,6 @@ myconstr(x, y, alpha = 0.05, paired = paired)
 
 \item{paired}{determines if t-test is paired}
 }
-\value{
-
-}
 \description{
 Takes in four parameters, two arrays of numbers, the confidence and a boolean
 Uses both arrays to perform a t-test, saving the dataframe from the two arrays, level of confidence, confidence interval, and p-value
