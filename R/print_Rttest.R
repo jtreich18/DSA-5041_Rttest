@@ -16,10 +16,10 @@ print_Rttest <- function(obj) {
 
   message("A 95% confidence interval for ", obj$`CI Lower`, " - ", obj$`CI Upper`)
   if (obj$`P Value` < obj$`Alpha Value`) {
-    print("We will reject the null hypothesis and conclude these population means are different with 95% confidence")
+    message("We will reject the null hypothesis and conclude these population means are different with 95% confidence")
   }
   else{
-    print("We will fail to reject the null hypothesis and conclude these population means are similar with 95% confidence")
+    message("We will fail to reject the null hypothesis and conclude these population means are similar with 95% confidence")
   }
   print(list( obj$`Alpha Value`, obj$`CI Lower`, obj$`CI Upper`, obj$`P Value`))
   obj1 <- obj$`Dataframe X and Y`

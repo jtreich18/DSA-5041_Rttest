@@ -25,12 +25,26 @@ myconstr = function(x, y, alpha = 0.05, paired = paired) {
   # use t.test w var.equal set to true when p-val < alpha
   if (v2 < alpha) {
     t <- t.test(x, y, var.equal = TRUE, paired = paired)
+    var_equal = TRUE
   }
   # use t.test w var.equal set to false when p-val > alpha
   else {
     t <- t.test(x, y, var.equal = FALSE, paired = paired)
+    var_equal = FALSE
   }
 
+  # Print which type of test will be used
+  if (paired == FALSE) {
+    print("A Paired T-Test will be performed:")
+  }
+  else {
+    if (var_equal = TRUE) {
+      print("A Welch Test will be performed:")
+    }
+    else {
+      print("A T-Test will be performed:")
+    }
+  }
   # Store df, alpha, confidence interval and the p value in list obj
   obj = list(df.data, alpha = alpha, t$conf.int[1], t$conf.int[2], t$p.value, paired)
   names(obj) <- c("Dataframe X and Y", "Alpha Value", "CI Lower", "CI Upper",
