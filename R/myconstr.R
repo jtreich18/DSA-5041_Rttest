@@ -34,7 +34,7 @@ myconstr = function(x, y, alpha = 0.05, paired = paired) {
   }
 
   # Print which type of test will be used
-  if (paired == FALSE) {
+  if (paired == TRUE) {
     print("A Paired T-Test will be performed:")
   }
   else {
