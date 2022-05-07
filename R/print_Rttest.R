@@ -15,6 +15,7 @@ print_Rttest <- function(obj) {
                   "P Value", "Paired")
 
   print("A 95% confidence interval for ", obj$`CI Lower`, " - ", obj$`CI Upper`)
+
   print(list( obj$`Alpha Value`, obj$`CI Lower`, obj$`CI Upper`, obj$`P Value`))
   obj1 <- obj$`Dataframe X and Y`
 
